@@ -1,0 +1,4 @@
+- name: Instalando o Apache
+  hosts: serverB 
+  roles: 
+    - apache

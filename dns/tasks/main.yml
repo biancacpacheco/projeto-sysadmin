@@ -1,0 +1,19 @@
+  - name: Instalar o BIND9
+    apt:
+      name: bind9
+      state: present
+
+  - name: Copiar arquivo de configuração do BIND9
+    copy:
+      src: ../files/named.conf
+      dest: /etc/bind/named.conf.default-zones
+
+  - name: Copiar arquivo de db.teste.com.br
+    copy:
+      src: ../files/db.teste.com.br
+      dest: /etc/bind/db.teste.com.br
+
+  - name: Reiniciar o serviço BIND9
+    service:
+      name: bind9
+      state: restarted

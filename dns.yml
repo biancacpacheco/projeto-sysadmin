@@ -1,0 +1,4 @@
+- name: Instalando o DNS
+  hosts: serverA 
+  roles: 
+    - dns

@@ -1,0 +1,18 @@
+$TTL 60
+@ IN SOA server1.teste.com.br. contato.teste.com.br. (
+  1		; Serial
+  60		; Refresh
+  60		; Retry
+  60		; Expire
+  60  )		; Negative Cache TTL
+;
+@ IN NS server1.teste.com.br.
+@ IN NS server2.teste.com.br.
+@ IN MX 10 mail1.teste.com.br.
+@ IN MX 20 mail2.teste.com.br.
+server1 IN A 192.168.1.2
+server2 IN A 192.168.1.6
+web 	IN A 192.168.1.10
+mail1	IN A 192.168.1.11
+mail2	IN A 192.168.1.12
+www 	IN CNAME web

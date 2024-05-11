@@ -1,0 +1,4 @@
+- name: Instalando o DNS no backup
+  hosts: backupServer 
+  roles: 
+    - backup-dns

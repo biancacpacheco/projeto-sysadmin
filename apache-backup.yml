@@ -1,0 +1,4 @@
+- name: Instalando o Apache
+  hosts: backupServer 
+  roles: 
+    - apache
